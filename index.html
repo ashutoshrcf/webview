@@ -11,7 +11,7 @@
 
 <body>
   <div class="container">
-    <form id="contact" method="post">
+    <form id="contact" onsubmit="submitForm()" method="post">
       <fieldset>
         <input placeholder="First Name" type="text" tabindex="1" name="fname" pattern="[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*" required id="fname-input" autofocus>
       </fieldset>
@@ -34,7 +34,7 @@
         <input placeholder="Postcode" type="text" tabindex="7" name="postcode" id="postcode-input" required>
       </fieldset>
       <fieldset>
-        <button name="submit" type="submit" id="contact-submit" onclick="return submitForm()">Submit</button>
+        <button name="submit" type="submit" id="contact-submit">Submit</button>
       </fieldset>
       <p class="privacy-policy">To know more about our privacy policy <a href="https://www.landrover.co.uk/privacy-policy/index.html" target="_blank" title="Privacy Policy">click here</a></p>
     </form>
