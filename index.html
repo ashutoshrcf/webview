@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>User Input</title>
+
+  <link rel="stylesheet" href="form.css">
+
+  <script src="webview.js">
+</head>
+
+<body>
+  <div class="container">
+    <form id="contact" action="" method="post">
+      <fieldset>
+        <input placeholder="Your full VIN" type="text" tabindex="1" name="full_vin" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Full Name" type="text" tabindex="2" name="full_name" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Email Address" type="email" tabindex="3" name="email" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Phone Number" type="tel" tabindex="4" name="phone" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Postal address" type="text" tabindex="5" name="address" required>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" onclick="submitForm()">Submit</button>
+      </fieldset>
+      <p class="privacy-policy">To know more about our privacy policy <a href="https://www.landrover.co.uk/privacy-policy/index.html" target="_blank" title="Privacy Policy">click here</a></p>
+    </form>
+  </div>
+</body>
+
+</html>
