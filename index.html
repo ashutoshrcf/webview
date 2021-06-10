@@ -14,30 +14,36 @@
   <script type="text/javascript" src="webview.js"></script>
 </head>
 
-<body>
+
+
   <div class="container">
-    <form id="contact" action="#" method="post">
+    <form id="contact" method="post">
       <fieldset>
-        <input placeholder="Your full VIN" type="text" tabindex="1" name="full_vin" required autofocus>
+        <input placeholder="First Name" type="text" tabindex="1" name="fname" required>
       </fieldset>
       <fieldset>
-        <input placeholder="Full Name" type="text" tabindex="2" name="full_name" required>
+        <input placeholder="Last Name" type="text" tabindex="2" name="lname" required>
       </fieldset>
       <fieldset>
-        <input placeholder="Email Address" type="email" tabindex="3" name="email" required>
+        <input placeholder="Your Full VIN" type="text" tabindex="3" name="vin" required autofocus>
       </fieldset>
       <fieldset>
-        <input placeholder="Phone Number" type="tel" tabindex="4" name="phone" required>
+        <input placeholder="Email Address" type="email" tabindex="4" name="email" required>
       </fieldset>
       <fieldset>
-        <input placeholder="Postal address" type="text" tabindex="5" name="address" required>
+        <input placeholder="Phone Number" type="tel" tabindex="5" name="phone" required>
       </fieldset>
       <fieldset>
-        <button name="submit" type="button" id="contact-submit" onclick="submitForm()">Submit</button>
+        <input placeholder="Line 1 address" type="text" tabindex="6" name="addressLine1" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Postcode" type="text" tabindex="7" name="postcode" required>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" onclick="submitForm()">Submit</button>
       </fieldset>
       <p class="privacy-policy">To know more about our privacy policy <a href="https://www.landrover.co.uk/privacy-policy/index.html" target="_blank" title="Privacy Policy">click here</a></p>
     </form>
   </div>
 </body>
-
 </html>
