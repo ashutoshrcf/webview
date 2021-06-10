@@ -74,19 +74,3 @@ async function sha256(message) {
     const hashHex = hashArray.map(b => ('00' + b.toString(16)).slice(-2)).join('');
     return hashHex;
 }
-
-// change error messages when input is not validated
-var fname = document.getElementById('fname-input');
-fname.oninvalid = function(event) {
-    event.target.setCustomValidity('Invalid first name');
-}
-
-var lname = document.getElementById('lname-input');
-lname.oninvalid = function(event) {
-    event.target.setCustomValidity('Invalid last name');
-}
-
-var vin = document.getElementById('vin-input');
-vin.oninvalid = function(event) {
-    event.target.setCustomValidity('VIN should be valid and 17 characters long');
-}
