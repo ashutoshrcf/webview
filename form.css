@@ -74,7 +74,7 @@ fieldset {
   border: 1px solid #aaa;
 }
 
-#contact button[type="submit"] {
+#contact button[type="button"] {
   cursor: pointer;
   width: 100%;
   border: none;
@@ -85,14 +85,14 @@ fieldset {
   font-size: 15px;
 }
 
-#contact button[type="submit"]:hover {
+#contact button[type="button"]:hover {
   background: #43A047;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active {
+#contact button[type="button"]:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
