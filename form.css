@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
 * {
   margin: 0;
   padding: 0;
@@ -34,16 +35,6 @@ body {
 #contact input[type="url"],
 #contact button[type="submit"] {
   font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
-}
-
-input:invalid{
-  border-color: red;
-  background-color: #ffdddd;
-}
-
-form.submitted
-{
-    border:1px solid #f00;
 }
 
 #contact {
@@ -109,7 +100,8 @@ fieldset {
 .privacy-policy {
   text-align: center;
 }
-.privacy-policy a{
+
+.privacy-policy a {
   text-decoration: none;
 }
 
@@ -118,18 +110,41 @@ fieldset {
   border: 1px solid #aaa;
 }
 
+#vin-input,
+#postcode-input {
+  text-transform: uppercase;
+}
+
+#email-input {
+  text-transform: lowercase;
+}
+
+#line1-input,
+#fname-input,
+#lname-input {
+  text-transform: capitalize;
+}
+
 ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  text-transform: none;
   color: #888;
 }
 
 :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  text-transform: none;
   color: #888;
 }
 
 ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  text-transform: none;
   color: #888;
 }
 
 :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  text-transform: none;
   color: #888;
 }
