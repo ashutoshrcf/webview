@@ -1,44 +1,45 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Input</title>
-  <link rel="stylesheet" href="form.css">
-  <script type="text/javascript" src="webview.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Validation</title>
+    <link rel="stylesheet" href="form.css">
+    <script type="text/javascript" src="webview.js"></script>
+  </head>
 
-<body>
-  <div class="container">
-    <form id="contact" method="post">
-      <fieldset>
-        <input placeholder="First Name" type="text" tabindex="1" name="fname" pattern="[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*" required id="fname-input" autofocus>
-      </fieldset>
-      <fieldset>
-        <input placeholder="Last Name" type="text" tabindex="2" name="lname" pattern="[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*" id="lname-input" required>
-      </fieldset>
-      <fieldset>
-        <input placeholder="Your full VIN" type="text" tabindex="3" name="vin" pattern="[A-Ha-hJ-Nj-nPpR-Zr-z0-9]{17}" id="vin-input" id="vin-input" required>
-      </fieldset>
-      <fieldset>
-        <input placeholder="Email Address" type="email" tabindex="4" name="email" id="email-input" required>
-      </fieldset>
-      <fieldset>
-        <input placeholder="Phone Number" type="tel" tabindex="5" name="phone" required>
-      </fieldset>
-      <fieldset>
-        <input placeholder="Line 1 address" type="text" tabindex="6" name="addressLine1" id="line1-input" required>
-      </fieldset>
-      <fieldset>
-        <input placeholder="Postcode" type="text" tabindex="7" name="postcode" id="postcode-input" required>
-      </fieldset>
-      <fieldset>
-        <button name="btnsubmit" type="button" id="contact-submit" onclick="submitForm()">Submit</button>
-      </fieldset>
-      <p class="privacy-policy">To know more about our privacy policy <a href="https://www.landrover.co.uk/privacy-policy/index.html" target="_blank" title="Privacy Policy">click here</a></p>
-    </form>
-  </div>
-</body>
+  <body>
+    <div class="container">
+      <form id="contact" method="post">
+        <div class="inputField">
+          <input placeholder="First Name" type="text" tabindex="1" name="fname" pattern="[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*" required id="fname-input" autofocus>
+
+          <input placeholder="Last Name" type="text" tabindex="2" name="lname" pattern="[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*" id="lname-input" required>
+        </div>
+
+        <div class="inputField">
+          <input placeholder="Your full VIN" type="text" tabindex="3" name="vin" pattern="[A-Ha-hJ-Nj-nPpR-Zr-z0-9]{17}" id="vin-input" id="vin-input" required>
+        </div>
+
+        <div class="inputField">
+          <input placeholder="Email Address" type="email" tabindex="4" name="email" id="email-input" required>
+        </div>
+        <div class="inputField">
+          <input placeholder="Phone Number" type="tel" tabindex="5" name="phone" required>
+        </div>
+        <div class="inputField">
+          <input placeholder="House Number" type="text" tabindex="6" name="houseNumber" id="line1-input" required>
+        </div>
+        <div class="inputField">
+          <input placeholder="Postcode" type="text" tabindex="7" name="postcode" id="postcode-input" required>
+        </div>
+        <div class="inputField">
+          <button name="btnsubmit" type="button" id="contact-submit" onclick="submitForm()">Submit</button>
+        </div>
+        <p class="privacy-policy">To know more about our privacy policy <a href="https://www.landrover.co.uk/privacy-policy/index.html" target="_blank" title="Privacy Policy">click here</a></p>
+      </form>
+    </div>
+  </body>
 
 </html>
