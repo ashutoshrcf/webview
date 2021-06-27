@@ -13,9 +13,12 @@
     <div class="container">
       <form id="contact" method="post">
         <div class="inputField">
-          <input placeholder="First Name" type="text" tabindex="1" name="fname" pattern="[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*" required id="fname-input" autofocus>
-
-          <input placeholder="Last Name" type="text" tabindex="2" name="lname" pattern="[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*" id="lname-input" required>
+          <div>
+            <input placeholder="First Name" type="text" tabindex="1" name="fname" pattern="[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*" required id="fname-input" autofocus>
+          </div>
+          <div>
+            <input placeholder="Last Name" type="text" tabindex="2" name="lname" pattern="[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*" id="lname-input" required>
+          </div>
         </div>
 
         <div class="inputField">
@@ -29,10 +32,12 @@
           <input placeholder="Phone Number" type="tel" tabindex="5" name="phone" required>
         </div>
         <div class="inputField">
-          <input placeholder="House Number" type="text" tabindex="6" name="houseNumber" id="line1-input" required>
-        </div>
-        <div class="inputField">
-          <input placeholder="Postcode" type="text" tabindex="7" name="postcode" id="postcode-input" required>
+          <div>
+            <input placeholder="House Number" type="text" tabindex="6" name="houseNumber" id="line1-input" required>
+          </div>
+          <div>
+            <input placeholder="Postcode" type="text" tabindex="7" name="postcode" id="postcode-input" required>
+          </div>
         </div>
         <div class="inputField">
           <button name="btnsubmit" type="button" id="contact-submit" onclick="submitForm()">Submit</button>
