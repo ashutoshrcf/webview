@@ -33,6 +33,14 @@ body p{
   position: relative;
 }
 
+#user-validation > p{
+  margin: 1em 0 0.5em 0;
+	font-weight: 600;
+	font-family: 'Titillium Web', sans-serif;  
+  font-size: 26px;
+  text-align: center;	
+}
+
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
@@ -114,8 +122,8 @@ body p{
 #contact-submit {
   cursor: pointer;
   width: 100%;
-  border: none;
-  background: #005A2B;
+  border: 1px solid #0C121C;
+  background: #0C121C;
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
@@ -123,7 +131,9 @@ body p{
 }
 
 #contact-submit:hover {
-  background: #43A047;
+  background: #FFF;
+  color: #0C121C;
+  border: 1px solid #0C121C;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
