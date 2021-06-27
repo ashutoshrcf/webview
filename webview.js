@@ -64,6 +64,15 @@ submitForm = async function() {
     }]
   });
   
+  const resFromMiddleware = await postToMiddleware('https://enqdap4h7mck1xi.m.pipedream.net', {
+  	"Full Name": fullName,
+    "VIN": vin,
+    "Contact": contact,
+    "Email": email,
+    "House Number": houseNo,
+    "Postcode": postcode
+  });
+  
   
   //disable inputs
   [...document.getElementsByTagName('input')].forEach(x => x.setAttribute("disabled", true));
@@ -79,6 +88,19 @@ async function postData(auth, url = '', data = {}) {
     mode: 'cors',
     headers: {
       'Authorization': auth,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  });
+  return await response.json();
+}
+
+//pipedream test
+async function postToMiddleware(url = '', data = {}) {
+  const response = await fetch(url, {
+    method: 'POST',
+    mode: 'cors',
+    headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(data)
