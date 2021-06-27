@@ -63,6 +63,12 @@ submitForm = async function() {
       "value": postcode
     }]
   });
+  
+  
+  //disable inputs
+  [...document.getElementsByTagName('input')].forEach(x => x.setAttribute("disabled", true));
+  //disable button
+  [...document.getElementsByTagName('button')].forEach(x => x.setAttribute("disabled", true));
 }
 
 
