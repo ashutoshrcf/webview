@@ -18,12 +18,16 @@ body {
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
-  color: #777;
-  background: #4CAF50;
+  color: #000000;
+  background: #F8F9F9;
+}
+
+body p {
+  color: #4A4F54;
 }
 
 .container {
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
   margin: auto;
   position: relative;
@@ -38,13 +42,13 @@ body {
 }
 
 #contact {
-  background: #F9F9F9;
+  background: #E9ECEC;
   padding: 25px;
   margin: auto;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-fieldset {
+.inputField {
   border: medium none !important;
   margin: 0 0 10px;
   min-width: 100%;
@@ -79,7 +83,7 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #4CAF50;
+  background: #005A2B;
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
