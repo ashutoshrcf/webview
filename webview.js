@@ -64,6 +64,7 @@ submitForm = async function() {
     }]
   });
   
+  /*
   const resFromMiddleware = await postToMiddleware('https://enqdap4h7mck1xi.m.pipedream.net', {
   	"Full Name": fullName,
     "VIN": vin,
@@ -72,6 +73,7 @@ submitForm = async function() {
     "House Number": houseNo,
     "Postcode": postcode
   });
+  */
   
   
   //disable inputs
@@ -95,6 +97,7 @@ async function postData(auth, url = '', data = {}) {
   return await response.json();
 }
 
+/*
 //pipedream test
 async function postToMiddleware(url = '', data = {}) {
   const response = await fetch(url, {
@@ -107,6 +110,7 @@ async function postToMiddleware(url = '', data = {}) {
   });
   return await response.json();
 }
+*/
 
 async function sha256(message) {
   // encode as UTF-8
