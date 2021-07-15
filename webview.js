@@ -38,7 +38,7 @@ submitForm = async function () {
     const authString = `${conversationId} || ${botId}`;
     const auth = await sha256(authString);
 
-    await postData(auth, domain, {
+    var res = await postData(auth, domain, {
         botId,
         conversationId,
         userId,
@@ -64,11 +64,7 @@ submitForm = async function () {
         }]
     });
 
-    var closeBtn = document.getElementById("#contact-submit");
-
-    closeBtn.addEventListener("click", () => {
-        window.close()
-    })
+    var res = await closeWindow();
 
     /*
     const resFromMiddleware = await postToMiddleware('https://enqdap4h7mck1xi.m.pipedream.net', {
@@ -128,4 +124,12 @@ async function sha256(message) {
     // convert bytes to hex string
     const hashHex = hashArray.map(b => ('00' + b.toString(16)).slice(-2)).join('');
     return hashHex;
+}
+
+async function closeWindow() {
+    var closeBtn = document.getElementById("#contact-submit");
+
+    closeBtn.addEventListener("click", () => {
+        window.close()
+    })
 }
