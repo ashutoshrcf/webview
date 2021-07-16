@@ -42,7 +42,7 @@ submitForm = async function() {
     botId,
     conversationId,
     userId,
-    message: "USER_FORM:SUBMITTED SUCCESSFULLY", // optional
+    message: "AYO:FORM SUBMITTED SUCCESSFULLY", // optional
     contextVariables: [{
       "name": "vin",
       "value": vin
