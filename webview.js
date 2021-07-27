@@ -66,17 +66,6 @@ submitForm = async function () {
 
     console.log('WEBVIEW RESPONSE -->' + resWebview);
 
-    const resPipedream = await postToMiddleware('https://enpkjyszk96avvv.m.pipedream.net', {
-        "Full Name": fullName,
-        "VIN": vin,
-        "Contact": contact,
-        "Email": email,
-        "House Number": houseNo,
-        "Postcode": postcode
-    });
-
-    console.log('PIPEDREAM RESPONSE -->' + resPipedream);
-
     //disable input fields
     Array.from(document.getElementsByTagName('input')).forEach(x => x.setAttribute("disabled", true));
     //disable button
@@ -91,20 +80,6 @@ async function postData(auth, url = '', data = {}) {
         mode: 'cors',
         headers: {
             'Authorization': auth,
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    });
-    return await response.json();
-}
-
-
-//pipedream test
-async function postToPipedream(url = '', data = {}) {
-    const response = await fetch(url, {
-        method: 'POST',
-        mode: 'cors',
-        headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
